@@ -5,10 +5,10 @@
 
 #define RELAYPIN_1 D1
 
-#define WIFI_SSID  "lab120"
-#define WIFI_PASS  "labredes120"
-#define APP_KEY    "447074ef-de9c-456b-9fef-63272189bfbb"    // Deve parecer com "de0bxxxx-1x3x-4x3x-ax2x-5dabxxxxxxxx"
-#define APP_SECRET "c3b18d5c-9a2e-4e3c-8149-91d8ae94f67c-f3888b4e-9a81-4f5b-a590-67ea5e7b1e35" // Deve parecer como "5f36xxxx-x3x7-4x3x-xexe-e86724a9xxxx-4c4axxxx-3x3x-x5xe-x9x3-333d65xxxxxx"
+#define WIFI_SSID  ""
+#define WIFI_PASS  ""
+#define APP_KEY    ""    // Deve parecer com "de0bxxxx-1x3x-4x3x-ax2x-5dabxxxxxxxx"
+#define APP_SECRET "" // Deve parecer como "5f36xxxx-x3x7-4x3x-xexe-e86724a9xxxx-4c4axxxx-3x3x-x5xe-x9x3-333d65xxxxxx"
 #define INTERVALO_ENVIO_THINGSPEAK 3000 // Intervalo entre envios de dados ao ThingSpeak (em ms)
 
 float valor_anterior = 0;
@@ -20,11 +20,11 @@ struct RelayInfo {
 };
 
 std::vector<RelayInfo> relays = {
-    {"635bea21b8a7fefbd6299b26", "Relay 1", RELAYPIN_1}};      // deviceId do relay 1     // deviceId do relay 2
-
+    {"", "Relay 1", RELAYPIN_1}};      // deviceId do relay 1 deve parecer 635bexxxxxxxxxxxxxxxxxxx
+                                                                           
 // constantes e variáveis globais 
 char endereco_api_thingspeak[] = "api.thingspeak.com";
-String chave_escrita_thingspeak = "1M3M1MB7G5WK4UC7";  // Coloque aqui sua chave de escrita do seu canal
+String chave_escrita_thingspeak = "";  // Coloque aqui sua chave de escrita do seu canal
 unsigned long last_connection_time;
 WiFiClient client;
 
