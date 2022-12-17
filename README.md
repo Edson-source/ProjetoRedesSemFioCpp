@@ -11,7 +11,7 @@ https://user-images.githubusercontent.com/93664169/208250410-401a8a55-5654-411f-
 
 
 
-# MyBudget
+# Projeto Redes Sem fio
 
 Esse projeto foi uma proposta da aula de redes da universidade federal de santa catarina - UFSC
 
